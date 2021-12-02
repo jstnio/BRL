@@ -20,9 +20,10 @@
 <body>
     <h3>hello</h3>
     <form action="https://formsubmit.co/jstnio@brl.global" method="POST">
-        <input type="text" name="name" required>
-        <input type="email" name="email" required>
-        <button type="submit">Send</button>
+        <input type="hidden" name="_template" value="table">
+        <input class="form-control" type="text" name="name" placeholder="Type your message" required>
+        <input class="form-control" type="email" name="email" required>
+        <button class="btn btn-info" type="submit">Send</button>
    </form>
 </body>
 </html>
