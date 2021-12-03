@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../images/departure.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/lux/bootstrap.min.css">
     <link href="./css/styles.css" rel="stylesheet">
     <style>
         .resp-iframe {
@@ -18,12 +19,26 @@
     </style>
 </head>
 <body>
-    <h3>hello</h3>
+    <h3>Hello</h3>
     <form action="https://formsubmit.co/jstnio@brl.global" method="POST">
         <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_subject" value="Contact From WebSite.">
-        <input class="form-control" type="text" name="name" placeholder="Type your message" required>
-        <input class="form-control" type="email" name="email" required>
+        <input type="hidden" name="_subject" value="Contact From BRL website.">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>Message</td>
+
         <button class="btn btn-info" type="submit">Send</button>
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_next" value="https://brl.global/thanks.html">
